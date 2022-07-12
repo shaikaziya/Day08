@@ -39,12 +39,12 @@ request.onload=function(){
    console.log("***********Print the total population of countries using reduce function***********              "+totalpop)
 
    // e)Print the country which uses US Dollars as currency.
-   var count = 0
+      
+   console.log("***********Print the country which uses US Dollars as currency***********")
    var result1=result.filter((result)=>  {
    var currencies = result.currencies
-    if (currencies[0].symbol === "$") {
-        console.log(result.region)
-        count++            
+    if (currencies[0].name === "United States dollar") {
+        console.log(result.region)           
     }
 });
 }
